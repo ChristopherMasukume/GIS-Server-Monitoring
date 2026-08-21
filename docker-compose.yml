@@ -26,3 +26,5 @@ services:
 
 volumes:
   grafana-data:
+
+# this for prometheus.yml
