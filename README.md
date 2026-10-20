@@ -102,9 +102,9 @@ All three metrics are **gauges expressed as percentages between 0 and 100**. The
 
 | Metric | Example | Description |
 |---|---|---|
-| `windows_cpu_usage` | `windows_cpu_usage{server="172.16.15.55"} 35` | Approximate CPU utilization percentage reported by Windows |
-| `windows_memory_usage` | `windows_memory_usage{server="172.16.15.55"} 62.5` | Percentage of visible physical memory currently in use |
-| `windows_disk_usage` | `windows_disk_usage{server="172.16.15.55",drive="C:"} 74.92` | Percentage of space used on each local fixed disk |
+| `windows_cpu_usage` | `windows_cpu_usage{server="GIS SERVER"} 35` | Approximate CPU utilization percentage reported by Windows |
+| `windows_memory_usage` | `windows_memory_usage{server="GIS SERVER"} 62.5` | Percentage of visible physical memory currently in use |
+| `windows_disk_usage` | `windows_disk_usage{server="GIS SERVER",drive="C:"} 74.92` | Percentage of space used on each local fixed disk |
 
 ## 6. ⚙️ Installation and Configuration
 
@@ -242,7 +242,7 @@ Configure the destination using the monitoring laptop's reachable IP address:
 
 ```powershell
 $receiver = "http://<MONITORING_LAPTOP_IP>:9443"
-$serverId = "172.16.15.55"
+$serverId = "GIS SERVER"
 ```
 
 > [!IMPORTANT]
